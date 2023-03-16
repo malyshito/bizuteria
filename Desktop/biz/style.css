@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Prata&family=Raleway:wght@300&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #dcdbdb;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 3vw;
+  font-family: 'Prata';
+  font-size: 1.3vw;
+
+}
+
+.list {
+  padding: 0vw 2vw 0vw 2vw;
+  list-style: none;
+  position: relative;
+}
+
+.list a:before{
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  bottom: -2vw;
+  left: 42%;
+  right: 0;
+  background-image: url('./photo/1551445551.svg');
+  background-attachment:auto;
+  background-size:contain;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+  
+}
+.list a:hover:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.5s ease;
+  box-shadow: 0px -1vw 1.4vw 1.3vw rgba(86, 193, 232, 0.5);
+  
+}
+
+.list a:hover::before{
+  bottom: 2vw;
+  width: 2vw;
+  height: 2vw;
+}
+
+.list a:hover{
+color: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.slider-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.33%;
+  height: 50vw;
+  opacity: 50%;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.7vw;
+  font-family: 'Prata', serif;
+
+}
+
+.slider-box:hover {
+  opacity: 1;
+  transform: scaleX(1.1);
+  z-index: 1;
+  box-shadow: 2px 0px 20px 10px rgba(0, 0, 0, 0.75);
+}
+
+.prom {
+  background-image: url("https://i.pinimg.com/564x/a9/a8/1f/a9a81ff164d51d6ab255d8b72aa66436.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.new {
+  background-image: url("https://i.pinimg.com/564x/69/ef/2b/69ef2b084f1169b61f477d6fd94b1679.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top {
+  background-image: url("https://i.pinimg.com/564x/08/98/31/08983156f390e7d9d296986a8c1f20c2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.baner-jewellery {
+  height: 60vw;
+  width: 100%;
+  background-image: url("/photo/joanna-kosinska-78uNJt1kPw8-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vw;
+  padding-right: 1;
+  
+}
+
+.description {
+  margin-right: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: justify;
+  width: 30%;
+  height: 40%;
+}
+
+.description-others {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+}
+
+.buy-now {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.dis-row {
+  padding-top: 3vw;
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  width: 100%;
+}
+
+.promo-photo {
+  display: flex;
+  align-items:flex-start;
+  padding-left: 5vw;
+  justify-content:center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+.photo-ring {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  margin: -2vw;
+  border-radius: 10px;
+  box-shadow: #1a4442 2px 2px 15px 2px;
+  opacity: 70%;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+}
+
+.photo-ring-one {
+  position: absolute;
+  z-index: 1;
+  width: 20vw;
+  height: 20vw;
+  opacity: 70%;
+  border-radius: 10px;
+  box-shadow: #1a4442 2px 2px 15px 2px;
+  transition: all 0.5s ease-in-out;
+  
+}
+
+.photo-ring-two {
+  position: relative;
+  z-index: px;
+  width: 20vw;
+  height: 20vw;
+  margin: -4vw;
+  border-radius: 10px;
+  box-shadow: #1a4442 2px 2px 15px 2px;
+  z-index: 3;
+  transition: all 0.5s ease-in-out;
+}
+
+.svg-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  background-image: url("./photo/tag.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.svg-photo h1 {
+  transform: rotate(327deg);
+  font-size: 2vw;
+  font-family: 'Prata', serif;
+}
+
+.btn-buy-now {
+  padding: 10px;
+  width: 10vw;
+  height: 4vw;
+  border-radius: 1vw;
+  background-color: rgb(143, 221, 221);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1vw;
+}
+
+.btn-buy-now:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
+.description-ring{
+  padding-top: 8.3vw;
+  padding-left: 1vw;
+}
+.description-ring h1{
+  font-family: 'Prata', serif;
+  font-size: 1.6vw;
+}
+.description-ring span{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1vw;
+;
+
+}
+
+.btn-buy-now{
+  display: inline-block;
+  padding: 10px 0px 10px 0px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.1vw;
+  font-weight: bold;
+  color: white;
+  background-image: linear-gradient(to right, #b6dc6f, #f4f403);
+  background-size: 200% auto;
+  transition: all 0.3s ease-out;
+  font-family: 'Prata', serif;
+  font-weight: 300;
+}
+
+.btn-buy-now:hover{
+  transform: translateX(10px);
+  background-position: 100% center;
+}
+.description h1{
+  font-family: 'Prata', serif;
+  font-size: 5vw;
+  font-weight: 400;
+}
+.description h2{
+  font-family: 'Prata', serif;
+  font-size: 3vw;
+  font-weight: 400;
+}
+.description span{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2vw;
+
+}
+.buy-now span{
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8vw;
+  padding-top: 0.7vw;
+}
+
+.animated {
+  opacity: 100%;
+}
+.buy-now h1{
+
+  font-family: 'Prata', serif;
+  font-size: 3vw;
+}
+.buy-now h2{
+  padding-bottom: 9vw;
+  font-family: 'Prata', serif;
+  font-size: 2vw;
+  text-decoration:line-through;
+}
+.bestsellers{
+  width:100%;
+  height:60vw;
+  flex-direction: column;
+}
+.bestsellers-h1{
+  display: flex;
+  width: 100%;
+  height: 30%;
+  justify-content: center;
+
+}
+.bestseller-products{
+  flex-wrap: nowrap;
+  display: flex;
+  height: 70%;
+  width: 100%;
+  flex-direction: row;
+  padding-bottom: 1vw ;
+}
+.product{
+  margin:0.15vw; 
+  display: flex;
+  
+  width: 33.333%;
+  height: 100%;
+  border-radius: 1vw;
+}
+.product img{
+  padding: 1vw;
+  width: 100%;
+  height: 70%;
+}
+
